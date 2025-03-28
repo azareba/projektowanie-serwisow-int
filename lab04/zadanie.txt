@@ -1,0 +1,74 @@
+zadanie 10 //////////////////////////////////////
+Wymagania dotyczące stylów CSS
+1.	Strona powinna być wyśrodkowana zarówno w poziomie, jak i w pionie.
+2.	Nagłówek (header) powinien zajmować pełną szerokość strony i mieć wysokość 80px.
+3.	Drugi wiersz (.content) powinien zawierać trzy sekcje: 
+o	Nawigacja (nav) po lewej stronie,
+o	Główna zawartość (main) na środku,
+o	Panel boczny (aside) po prawej stronie.
+Elementy te powinny znajdować się w jednym wierszu, a ich szerokości powinny być ustawione za pomocą flexbox(wysokość:300px):
+o	nav i aside powinny zajmować po 1 część dostępnej przestrzeni (flex:1
+o	main powinien zajmować 2 części przestrzeni.)
+4.	Stopka (footer) powinna zajmować pełną szerokość strony i mieć wysokość 70px.
+5.	Wykorzystaj Flexbox do układu strony oraz odstępów (gap).
+6.	Ustaw każdej sekcji różne kolory tła dla lepszej czytelności  teks jak na rysunku.
+
+HTML
+<div class="wrapper">
+    <header class="item">header</header>  
+        <div class="content">
+            <nav class="item">nav</nav>
+            <main class="item">main</main>
+            <aside class="item">aside</aside>
+        </div>
+    <footer class="item">footer</footer>
+</div>
+
+CSS
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//////////////////////////////////////////////////////////
+zad 11
+Przygotuj menu poziome zawierające pięć pozycji (Strona główna, O firmie, Sklep, Pomoc, Kontakt). Zaimplementuj odnośniki zmieniające się kolory w momencie najechania na element, a także wyróżniony element domyślny menu.
+Po kliknięciu na odnośniki przenosi na strony w których, przygotuj strony:
+O firmie: zdjęcie, krótki tekst, wyśrodkowane, kolor tekstu: czerwony
+Sklep: formularz: login i hasło, przycisk zaloguj
+Pomoc: Lista punktowana 3 wybrane hasła
+Kontakt: adres, wyśrodkowane i mapka dojazdowa z Google.
+
+Przygotuj wersje menu: z wykorzystaniem Flex. Przykładowy kod poniżej i prezentacji wykładu. 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1>The flex-direction Property</h1>
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+</body>
+</html>
+
