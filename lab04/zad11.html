@@ -4,16 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zadanie 11</title>
-    <link rel="stylesheet" href="/lab04/zad11.css">
+    <style>
+    body{
+        font-family:'Arial';
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        /* line-height: 50px; */
+        font-size: 15px;
+        border-radius: 5px;
+
+    }
+    .flex-container > div a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+    .flex-container > div:hover{
+        background-color: rgb(159, 160, 226);
+        color: white
+        /* font-weight: bolder; */
+    }
+    </style>
 </head>
 <body>
     <h1>The flex-direction Property</h1>
     <div class="flex-container">
-        <div>Strona główna</div>
-        <div>O firmie</div>
-        <div>Sklep</div>
-        <div>Pomoc</div> 
-        <div>Kontakt</div> 
+        <div><a href="ofirmie.html">O firmie</a></div>
+        <div><a href="sklep.html">Sklep</a></div>
+        <div><a href="pomoc.html">Pomoc</a></div> 
+        <div><a href="kontakt.html">Kontakt</a></div> 
     </div>
 </body>
 </html>

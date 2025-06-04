@@ -1,0 +1,11 @@
+Zadanie 21
+Przygotuj layaut strony typu Dashboard w którym przygotowujesz zestawienia wymyślonego przez siebie sklepu internetowego za pół roku. Użyj HTML, CSS, klas Taiwind CSS.
+ Elementy tego Dashboard’a powinny być w następującej kolejności:
+
+1. Nagłówek- pasek na górze strony, 
+2. Sekcja statystyki (użyj grida do pozycjonowania), 
+3. Wykres poziomy przychodów (użyj w-[40%] do ustawiania długości pasków),
+4. Postęp sprzedaży – realizacja planu sprzedaży (style="width: 65%;" to ustawiania długości paska),
+5. Realizacja Budżetu marketingowego (użyj znacznika <svg> <circle> by zbudować wykres kołowy)
+6. Udział kategorii w budżecie (Markieting, Sprzdaż, Inne) (użyj bg-[conic-gradient(...)] – by narysować wykres kołowy z trzema kolorami)
+7. Stopka

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zad 21</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <header class="bg-white shadow p-4">
+    <h1 class="text-xl font-bold text-blue-700">Biznes Dashboard MyFirma</h1>
+  </header>
+
+  <main class="p-6 space-y-6">
+
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">PRZYCHÓD</h2>
+        <p class="text-green-500 text-lg font-semibold">125 000 zł</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">NOWI KLIENCI</h2>
+        <p class="text-lg font-semibold">380</p>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">KONWERSJA</h2>
+        <p class="text-blue-500 text-lg font-semibold">5.4%</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-gray-500 text-sm">ZWROTY</h2>
+        <p class="text-red-500 text-lg font-semibold">3%</p>
+      </div>
+    </section>
+
+    <!-- Wykres poziomy przychodów (użyj w-[40%] do ustawiania długości pasków), -->
+    <section class="bg-white p-6 rounded shadow">
+      <h3 class="font-semibold mb-4">Wykres Przychodów (statyczny)</h3>
+      <div class="space-y-4"> 
+
+        <!-- nwm jak zrobic zeby byly szare  -->
+        <div >Styczeń <div class="bg-blue-500 h-4 rounded w-[35%]"></div></div>
+        <div>Luty <div class="bg-blue-500 h-4 rounded w-[60%]"></div></div>
+        <div>Marzec <div class="bg-blue-500 h-4 rounded w-[40%]"></div></div>
+        <div>Kwiecień <div class="bg-blue-500 h-4 rounded w-[50%]"></div></div>
+        <div>Maj <div class="bg-blue-500 h-4 rounded w-[80%]"></div></div>
+      </div>
+    </section>
+
+    <!-- Postęp sprzedaży – realizacja planu sprzedaży (style="width: 65%;" to ustawiania długości paska) -->
+    <section class="bg-white p-6 rounded shadow">
+      <h3 class="font-semibold mb-2">Postęp sprzedaży</h3>
+      <p class="text-sm fornt-semibold">Zrealicowano cel sprzedaży</p>
+      <div class="bg-gray-200 rounded h-4">
+        <div class="bg-green-500 h-4 rounded" style="width: 65%;"></div>
+      </div>
+
+      <p class="text-sm mt-1 text-gray-500">65% celu miesięcznego</p>
+    </section>
+
+    <!--  Realizacja Budżetu marketingowego (użyj znacznika  -->
+    <section class="bg-white p-6 rounded shadow">
+      <h3 class="font-semibold mb-2">Budżet marketingowy</h3>
+      <div class="flex items-center gap-4">
+        <svg width="100" height="100" >
+          <circle r="40" cx="50" cy="50" fill="none" stroke="#e5e7eb" stroke-width="10" />
+          <circle r="40" cx="50" cy="50" fill="none" stroke="#3b82f6" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="75" transform="rotate(-90 50 50)" />
+          <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="16">70%</text>
+        </svg>
+        <div>
+      <p class="text-sm mt-2">Realizacja budżetu marketingowego</p>
+      <p class="mx-auto text-xs text-gray-400">W tym kwartale</p>
+      </div>
+
+      </div>
+      
+
+    </section>
+
+    
+    <!-- Udział kategorii w budżecie (Markieting, Sprzdaż, Inne) -->
+    <section class="bg-white p-6 rounded shadow">
+      <h3 class="font-semibold mb-2">Udział kategorii (Pie chart w CSS)</h3>
+      <div class="w-24 h-24 rounded-full mx-auto"
+        style="background: conic-gradient(#3071da 0% 30%, #17ff22 30% 60%, #ff1414 60% 100%);">
+      </div>
+      <div class="mt-4 text-sm space-y-1">
+        <div class="flex items-center"><span class="w-3 h-3 bg-blue-500 mr-2 rounded-full"></span>Marketing: 30%</div>
+        <div class="flex items-center"><span class="w-3 h-3 bg-green-500 mr-2 rounded-full"></span>Sprzedaż: 30%</div>
+        <div class="flex items-center"><span class="w-3 h-3 bg-red-500 mr-2 rounded-full"></span>Inne : 40%</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white text-center text-sm text-gray-400 py-4 mt-6">
+    2025 MójSklep. Wszelkie prawa zastrzeżone.
+  </footer>
+
+</body>
+</html>

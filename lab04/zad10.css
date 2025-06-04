@@ -27,8 +27,8 @@ body,html{
     display: flex;
     flex-direction: column;
     width: 80%;
-    max-width: 100%
-
+    max-width: 100%;
+    gap: 10px;
     /* padding: ; */
 }
 

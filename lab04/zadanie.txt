@@ -36,9 +36,13 @@ CSS
 zad 11
 Przygotuj menu poziome zawierające pięć pozycji (Strona główna, O firmie, Sklep, Pomoc, Kontakt). Zaimplementuj odnośniki zmieniające się kolory w momencie najechania na element, a także wyróżniony element domyślny menu.
 Po kliknięciu na odnośniki przenosi na strony w których, przygotuj strony:
+
 O firmie: zdjęcie, krótki tekst, wyśrodkowane, kolor tekstu: czerwony
+
 Sklep: formularz: login i hasło, przycisk zaloguj
+
 Pomoc: Lista punktowana 3 wybrane hasła
+
 Kontakt: adres, wyśrodkowane i mapka dojazdowa z Google.
 
 Przygotuj wersje menu: z wykorzystaniem Flex. Przykładowy kod poniżej i prezentacji wykładu. 

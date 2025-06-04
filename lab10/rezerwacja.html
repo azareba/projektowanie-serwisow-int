@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rezerwacja Hotelu - Hotel i Browar Kociewski</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .header, .footer {
+      /* background-color: #007bff; */
+      color: black;
+      text-align: center;
+      padding: 1rem;
+    }
+    .form-section {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 2rem;
+    }
+    .btn-submit {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Formularz Rezerwacji Hotelu</h2>
+    <p>Wypełnij poniższy formularz</p>
+  </div>
+
+  <div class="container my-4">
+    <div class="form-section">
+
+      <form>
+        <p>twoja rezerwacja zostanie zeryfikowana przed przyjazdem</p>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">Imię</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Nazwisko</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+        </div>
+
+        <label class="form-label">Adres</label>
+        <input type="text" class="form-control mb-2" placeholder="Ulica i numer domu" required>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Miasto" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Województwo" required>
+          </div>
+        </div>
+        <input type="text" class="form-control mb-3" placeholder="Kod Pocztowy" required>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Numer Telefonu</label>
+            <input type="tel" class="form-control" id="phone" placeholder="+48 000-000-000" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="jan.kowalski@poczta.pl" required>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Data i Czas Przyjazdu</label>
+            <div class="input-group">
+              <input type="date" class="form-control" required>
+              <input type="time" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Data i Czas Wyjazdu</label>
+            <div class="input-group">
+              <input type="date" class="form-control" required>
+              <input type="time" class="form-control" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Liczba Dorosłych</label>
+            <input type="number" class="form-control" value="1" min="1" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Liczba Dzieci</label>
+            <input type="number" class="form-control" value="0" min="0" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Metoda Płatności</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="payment" id="czek" value="czek">
+            <label class="form-check-label" for="czek">Czek</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal">
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="special" class="form-label">Czy masz jakieś specjalne życzenia?</label>
+          <textarea class="form-control" id="special" rows="3" placeholder="Zacznij pisać..."></textarea>
+        </div>
+
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-6">
+            <strong>Suma:</strong> <span>0.00 PLN</span>
+          </div>
+          <div class="col-md-6 text-end">
+            <button type="submit" class="btn btn-success btn-submit">Prześlij</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- <div class="footer">
+    STOPKA
+  </div> -->
+
+</body>
+</html>

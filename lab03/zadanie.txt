@@ -1,0 +1,4 @@
+
+////////////////
+zadanie 9
+Uzyskaj podział strony korzystając z GRID-a, zaprojektuj menu (5 pozycji i odnośniki do innych stron- odpowiednie kolory, zmiana koloru menu po najechaniu kursorem). W header umieść  dowolny baner reklamowy. 

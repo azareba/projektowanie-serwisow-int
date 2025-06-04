@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #222;
+}
+
+.header {
+  background-color: rgb(91, 148, 223);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+}
+.header .title {
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 2;
+}
+.header .logo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  width: 150px;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.menu {
+  flex: 0 0 30%;
+  background-color: rgb(206, 155, 216);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu .menu-item {
+  background-color: rgb(91, 148, 223);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+.menu .menu-item:hover {
+  background-color: rgb(160, 155, 231);
+}
+.menu .menu-fill {
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.main {
+  flex: 0 0 70%;
+  background: linear-gradient(to bottom right, white, rgb(206, 155, 216));
+  border-radius: 20px;
+  padding: 15px;
+}
+.main img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.main p {
+  height: 300px;
+}
+
+.footer {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1533628635777-112b2239b1c7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+}
+.footer .footer-left {
+  color: black;
+  padding: 10px;
+}
+.footer .footer-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.agent {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgb(91, 148, 223);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #888;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.agent img {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .menu, .main {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=zad16.css.map */

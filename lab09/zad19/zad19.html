@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/r05.css">
+		<title>Bootstrap - Projekt startowy</title>
+	</head>	
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <i class="bi bi-globe"></i>
+            <a class="navbar-brand p-2" href="#"><strong>mój</strong>produkt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="#">Kup teraz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Główne zdjęcie -->
+    <div class="container-fluid main-photo">
+        <div class="row">
+            <div class="col-md-8 mx-auto caption">
+                <h1>Patrz na Świat z innej perspektywy</h1>
+                <p>Nasza aplikacja sprawi, że Twoje zdjęcia zyskają nową jakość.</p>
+                <p>Mobilny program graficzny za jedyne <br><strong>29.99$</strong></p>
+                <a href="#" class="btn btn-secondary">Kup pełną wersję</a>
+                <a href="#" class="btn btn-link">Wypróbuj</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Funkcje -->
+    <div class="container features">
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <i class="bi bi-people"></i>
+                <h3>Społeczność</h3>
+                <p>Udostępniaj swoje piękne zdjęcia wśród znajomych.<br>Zdobywaj popularność wśród fotografów.<br>Stań się kimś sławnym.</p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <i class="bi bi-cloud"></i>
+                <h3>Dostępność</h3>
+                <p>Przechowuj dane w chmurze, dostępnej z każdego miejsca. Aplikacja synchronizuje się z tabletem, smartfonem i komputerem.</p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <i class="bi bi-currency-euro"></i>
+                <h3>Pieniądze</h3>
+                <p>Sprzedawaj swoje dzieła na całym świecie.<br>Agencje reklamowe będą zabijać się o Twoje usługi.<br>A Ty przy tym na pewno zarobisz.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Karuzela -->
+    <div class="container features">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/product1.jpg" class="d-block w-100" alt="Mecz">
+                            <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded">
+                                Uchwyć najważniejsze momenty w Twoim życiu.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/product2.jpg" class="d-block w-100" alt="Spotkanie">
+                            <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded">
+                                Nieważne czy korzystasz z iOS, Android czy Windows Phone.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/product3.jpg" class="d-block w-100" alt="Kobieta">
+                            <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded">
+                                Za każdym razem korzystanie z aplikacji jest intuicyjne i wygodne.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Poprzedni</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Następny</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="container-fliud call-to-action">
+        <div class="row">
+            <div class="col-12">
+                <h2>Nie pozwól na marnowanie swojego talentu!</h2>
+                <a href="#" class="btn btn-outline-secondary m-2">Kup aplikację za 29.99$</a><br>
+                <a href="#" class="btn btn-light text-primary">Wypróbuj demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stopka -->
+    <div class="container-fluid-footer text-center p-5">
+        <div class="row">
+            <div class="col-12">
+                <p>Wszystkie prawa zastrzeżone. <strong>mój</strong>produkt &copy; 2015<br>
+                <small>kontakt@mojprodukt.pl</small></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+	

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>Tytuł badań </h1>
+  <h4 >podtytul z info w ramach  jakiego projektu badania były realizowane </h4>
+
+</div>
+  
+
+<div class="container mt-4">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Opis przeprowadzonych badań </h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <abbr title="Uniwerystet Gfdański">UG</abbr> Accusamus adipisci necessitatibus sint veniam, consectetur excepturi nemo est obcaecati molestiae tempora?
+      </p>
+    </div>
+
+
+    <div class="col-sm-6 text-nowrap">
+      <h3>Wyniki badań</h3>
+
+      <table class="table table-responsive table-hover table-primary table-bordered text-center ">
+        <!-- <thead class="thead-inverse"> -->
+          <caption>Płeć badanych</caption>
+          <thead >
+          <tr>
+            <th>X</th>
+            <th>Kobieta</th>
+            <th>Mężczyzna</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Częstość</th>
+            <td>57</td>
+            <td>43</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="alert alert-secondary" role="alert">
+        Podstrona do <a href="./plec.html" class="alert-link">plci</a> badanych
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn  btn-outline-success">Zapisz</button>
+        <button type="button" class="btn  btn-outline-warning">Komentuj</button>
+        <button type="button" class="btn  btn-outline-secondary">Share</button>
+      </div>
+      <br>
+
+
+      <hr>
+      <table class="table table-responsive table-hover table-primary table-bordered text-center">
+        <!-- <thead class="thead-inverse"> -->
+        <caption>Miejsce zamieszkania badanych</caption>
+        <thead>
+          <tr>
+            <th>X</th>
+            <th>Wieś</th>
+            <th>Miasto do 50 tys. miesz.</th>
+            <th>Miasto powyżej 50 tys. miesz</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Częstość</th>
+            <td>38</td>
+            <td>30</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alert alert-secondary" role="alert">
+        Podstrona do <a href="./zamieszkanie.html" class="alert-link">miejsca zamieszkania</a> badanych
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn  btn-outline-success">Zapisz</button>
+        <button type="button" class="btn  btn-outline-warning">Komentuj</button>
+        <button type="button" class="btn  btn-outline-secondary">Share</button>
+      </div>
+      <br>
+
+      
+      <hr>
+      <table class="table table-responsive table-hover table-primary table-bordered text-center">
+        <!-- <thead class="thead-inverse"> -->
+          <caption>Wykształcenie badanych</caption>
+        <thead >
+          <tr>
+            <th>X</th>
+            <th>Podstawowe</th>
+            <th>Zawodowe</th>
+            <th>Średnie</th>
+            <th>Wyższe</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Częstość</th>
+            <td>20</td>
+            <td>27</td>
+            <td>22</td>
+            <td>31</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="alert alert-secondary" role="alert">
+        Podstrona do <a href="./wyksztalcenie.html" class="alert-link">wykształcenia</a> badanych
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn  btn-outline-success">Zapisz</button>
+        <button type="button" class="btn  btn-outline-warning">Komentuj</button>
+        <button type="button" class="btn  btn-outline-secondary">Share</button>
+      </div>
+      <br>
+      <br>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid p-5 bg-primary-subtle ">
+  <!-- <span>tekst na footerze</span> -->
+  <button type="button" class="btn btn-outline-secondary">O autorze</button>
+</div>
+
+</body>
+</html>

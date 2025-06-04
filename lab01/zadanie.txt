@@ -1,0 +1,68 @@
+ZADAnie 1 
+Przygotuj stronę WWW, która będzie zawierała treść kolokwium z programowania w języku PHP (znajdź w Internecie jeszcze 2  zadania). W projekcie tym nagłówek informujący o dacie i tematyce kolokwium wykonaj elementami h1 oraz h2. Każde z zadań oznacz nagłówkiem h3 z numerem zadania. Treść każdego zadania może składać się z dowolnej liczby akapitów. Dodatkowo w treści zadań mogą wystąpić przykładowe kody źródłowe lub zawartość plików tekstowych. Treść plików tekstowych oraz kody programów komputerowych sformatuj przy użyciu elementu pre. Nazwy plików występujące w treści sformatuj elementami strong, zaś teksty wymagające uwypuklenia — elementami em. Na samej górze wstaw logo php i oddziel poziomą linią od treści zadań. W stopce (pod pozioma linią) wstaw mapę z Google maps z orientacja na centrum dydaktyczne UG w Sopocie.
+///////////////////////////
+odpowiedz:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 1</title>
+
+</head>
+<body>
+    
+    <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="phpLogo" width="100">
+    <h1>Prcaownia programowanie I</h1>
+    <h2>Kolos <br> 25 marca 2025</h2>
+    <h3>zadanie1</h3>
+    
+    
+    <p>Dany jest plik tekstowy o nazwie
+        <strong>zwierzeta.txt</strong> i nawartości:
+    </p>
+    <pre>
+    ssaki   kot,lis,koń
+    ptaki   wróbel,wrona
+    płazy   żaba,rzekotka
+    ...</pre>
+    <p>
+        Liczba wierszy w pliku moze byc dowolna, seoeratorem kolumn jest znak tabulacji oraz przecinek.
+        Pierwsza linijka oznacza ze do grupy zwierzat o nazwie <em>ssaki</em> należą zwierzęta <em>kot</em>, <em>lis</em> i <em>koń</em>.
+        Napisz sjrypt w php, który wyświetli dane z pliku <strong>zwierzeta.txt</strong> w postaci dwupoziomowej listy wypunktowanej <strong>ol</strong>
+    </p>
+
+    <p>Rozwiazanie zadania</p>
+    <div id="phpZad"></div>
+    <script>
+        fetch('index.php')
+            .then(res => res.text())
+            .then(data=>{
+                document.getElementById('phpZad').innerHTML =data;
+            })
+    </script>
+
+</body>
+</html>
+
+///////////////////////////
+zadanie 2
+Przygotuj stronę WWW prezentującą utwór Adama Mickiewicza pt. Oda do młodości. Elementami h1 oraz h2 oznacz autora i tytuł utworu. Treść utworu sformatuj elementami p oraz br. Myślniki wykonaj przy użyciu znaków specjalnych &mdash; , 
+zaś polski cudzysłów (w tekście pochyły)— przy użyciu znaków 
+&bdquo;  oraz &rdquo; :
+ ... Patrz na dół  &mdash; kędy wieczna mgła zaciemia< br />
+... Jednym &bdquo; stań się &rdquo; z bożej mocy   
+
+Adam Mickiewicz
+Oda do młodości
+Bez serc, bez ducha, — to szkieletów ludy!
+Młodości! dodaj mi skrzydła!
+Niech nad martwym wzlecę światem
+W rajską dziedzinę ułudy:
+Kędy zapał tworzy cudy,
+Nowości potrząsa kwiatem
+I obleka w nadziei złote malowidła!
+
+&mdash
+&bdquo
+&rdquo

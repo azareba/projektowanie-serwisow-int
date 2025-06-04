@@ -1,0 +1,73 @@
+.footer, .col, .header {
+  padding: 15px;
+}
+
+body {
+  background-color: #fdf6e3;
+  color: #000;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: #ffcc00;
+  color: #000;
+}
+.header h1 {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 100%;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+.menu ul li {
+  background-color: #333;
+  color: #000;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.menu ul li:hover {
+  background-color: #ff9900;
+}
+
+.content h2 {
+  font-size: 1.5em;
+}
+
+.aside {
+  background-color: #333;
+  color: #fdf6e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #ffcc00;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 600px) {
+  .col {
+    flex: 1 1 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col {
+    flex: 1 1 33.33%;
+  }
+}
+
+/*# sourceMappingURL=zad15.css.map */

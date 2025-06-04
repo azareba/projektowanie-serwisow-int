@@ -1,0 +1,37 @@
+<form action="skrypt.php" method="post">
+    <fieldset>
+        <legend>Dane Kontaktowe</legend>
+
+        <label>Imię:<br>
+        <input type="text" name="imie" required value="Jan">
+        </label>
+        <br><br>
+
+        <label>Nazwisko:<br>
+        <input type="text" name="nazwisko" required value="Kowalski">
+        </label>
+        <br><br>
+
+        <label>Telefon:<br>
+        <input type="tel" name="telefon" required pattern="\(0[0-9]{2}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" value="650-650-650" placeholder="(123) 456-78-90">
+        </label>
+        <br><br>
+
+        <label>Numer mieszkania:<br>
+        <input type="number" name="mieszkanie" min="1" max="21" placeholder="podaj numer mieszkania">
+        </label>
+        <br><br>
+
+        <label>Data urodzenia:<br>
+        <input type="date" name="data_urodzenia" min="1920-01-01" max="2020-01-01">
+        </label>
+        <br><br>
+
+        <label>Hasło:<br>
+        <input type="password" name="haslo" required minlength="8">
+        </label>
+        <br><br>
+
+        <input type="submit" value="Wyślij">
+    </fieldset>
+</form>

@@ -1,0 +1,46 @@
+zadanie 12
+Przygotuj menu poziome zawierające pięć pozycji (Strona główna, O firmie, Badania, Pomoc, Kontakt). Zaimplementuj odnośniki zmieniające się kolory w momencie najechania na element, a także wyróżniony element domyślny menu.
+Po kliknięciu na odnośniki przenosi na strony w których:
+O firmie: strona białe tło  z blokiem zawsze w lewym dolnym rogu z informacją o firmie (border, tekst, logo firmy pod tekstem)
+Badania: strona białe tło  z blokiem w środku tekstu, który w momencie przewijania tekstu, zawsz pozostanie widoczny u góry strony. W bloku umieść grafikę o przeźroczystości 0.5 i nazwa sklepu przed grafiką (z-index)
+Pomoc: strona białe tło z dowolnym tekstem o pomocy, wykorzystaj pseudoelementy:
+ 
+
+Przygotuj responsywną wersję menu, które wykorzystuje @media,  i zmienia układ menu z poziomego na pionowy.
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+/////////////////////
+zadanie 13
+Korzystając z flex – przygotuj następującą strukturę strony.
+ 
+1.	Bloki maja mieś zaokrąglone rogi – radius 25px
+2.	W bloku Main Content obrazek jako tło
+3.	W bloku Right Content gradient jako tło
+4.	W bloku Meny tekst Menu z efektem cienia
+5.	W bloku nagłówka animacja kwadratu z koloru czerwonego do żółtego
+6.	W bloku Header kwadrat, który w ciągu dwóch sekund rozszerza się  z 100px do 300px
+7.	Przygotuj RWD dla Flex-a, by bloki poniżej 800px szerokości ekranu ustawiały się jeden pod drugim
+8.	Gdzieś w menu blok, który przewija się ze stroną aż dojdzie do górnej krawędzi przeglądarki i się zatrzyma: position:sticky

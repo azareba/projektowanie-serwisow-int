@@ -1,0 +1,26 @@
+zadanie 15
+1.	Wykorzystując poniższy kod (lub flex, grid) przygotuj stronę o 3 wybranych atrakcjach Kaszub. Podziel poniższy kod na plik CSS (SCSS) oraz HTML. 
+2.	Przerób poniższy kod zgodnie z zasadą mobile first.
+3.	W pliku SCSS wszystkie kolory tekstu i tła mają się znaleźć o oddzielnych zmiennych.
+4.	Wykorzystaj  zagnieżdżenie selektrów w SCSS.
+5.	Dla podstron z atrakcjami przygotuj nowy plik ze stylami, w którym importujesz @import style strony głównej i zmieniasz kolor wybranego elementu.
+6.	W plikach ze stylami używaj dyrektywy @extend do rozszerzania styli, użyj @mixin i @include
+7.	Korzystając z funkcji NWD znajdującej się poniżej (napisanej w SCSS) pilnuj proporcji obrazków wstawionych do projektu.
+8.	Cała strona w odcieniach żółto-czarnych, na stronie każdej atrakcji: tytuł, zdjęcie obiektu, opis, cena
+9.	Napisz funkcję do ceny, jeżeli kolor tła biały to kolor cen na czarno.
+
+///////////
+zadanie 16
+Korzystając z zadania 13 – przygotowanej struktury strony w Flex, zmodyfikuj ją do schematu poniżej:
+ 
+Gdzie menu zajmuje 30% widoku strony, a Main Content pozostałą część.
+1.	Przygotuj responsywną wersję strony z wykorzystaniem zapytania o @media dla breakpoint 768px (main content wpada pod menu i wypełnia cały widok).
+2.	Blok Header ma mieć zaokrąglone rogi, a na środku napis: Katedra Informatyki Ekonomicznej (na środku), pod napisem (z-index) logo wydziału zarządzania (rozjaśnione). W momencie jak się najedzie na napis Katedra Informatyki Ekonomicznej (ma pojawić się etykieta CSS z informacją: JEDNOSTKA ORGANIZACYJNA UG)
+3.	Blok Footer ma zawierać dwa obrazy: jeden jako tło, drugi na środku obszaru(logo UG)
+Z lewej strony dane teleadresowe Katedry Informatyki Ekonomicznej.
+4.	W meny przygotuj 3 obszary -  (Historia, Pracownicy, Badania) oraz czwarty obszar wypełniający pozostałą część menu. Po najechaniu na jeden z trzech obszarów następuje jego animacja kolorystyczna – wybierz kolor początkowy i końcowy.
+5.	W Main Content wstaw zdjęcie budynku C WZR UG, a jako tło wykorzystaj gradient liniowy z odpowiednio dobraną kolorystyką. Pod obrazem tekst, który spowoduje pojawienie się suwaka przeglądarki.
+6.	Wstaw blok Agenta (pomoc) w prawym dolnym rogu, który pozostanie w tym miejscu nawet w momencie przewijania strony – opatrz blok odpowiednią grafiką oraz tekstem
+7.	W stylach CSS użyj zdefiniowanych zmiennych dla kolorów.
+8.	Użyj Sass dla zmiennych, zagnieżdżania styli,  importuj mixiny, użyj funkcji wbudowanej oraz napisz własną funkcję.
+

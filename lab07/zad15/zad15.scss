@@ -1,0 +1,105 @@
+$color-bg: #fdf6e3;
+$color-text: #000;
+$color-primary: #ffcc00;
+$color-secondary: #333;
+$color-link: #000;
+$color-hover: #ff9900;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%base-padding {
+  padding: 15px;
+}
+
+@function nwd($a, $b) {
+  @if $b == 0 {
+    @return $a;
+  }
+  @return nwd($b, $a % $b);
+}
+
+@function aspect-ratio($w, $h) {
+  $gcd: nwd($w, $h);
+  @return #{($w / $gcd)} / #{($h / $gcd)};
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: $color-primary;
+  color: $color-text;
+  @extend %base-padding;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  @extend %base-padding;
+  flex: 1 1 100%;
+}
+
+.menu {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: $color-secondary;
+      color: $color-link;
+      margin-bottom: 10px;
+      padding: 10px;
+
+      &:hover {
+        background-color: $color-hover;
+      }
+    }
+  }
+}
+
+.content {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+.aside {
+  background-color: $color-secondary;
+  color: $color-bg;
+  @include flex-center;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: $color-primary;
+  text-align: center;
+  font-size: 0.8em;
+  @extend %base-padding;
+}
+
+@media screen and (min-width: 600px) {
+  .col {
+    flex: 1 1 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .col {
+    flex: 1 1 33.33%;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontakt</title>
+    <link rel="stylesheet" href="./zad14.css">
+    <style>
+        /* body {
+            font-family: 'Arial', sans-serif;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        form {           
+            
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+
+        }
+        label, input {
+            
+            display: block;
+            width: 80%;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            /* font-size: 1em; */
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            background-color: white;
+            color: black;
+            border: px solid ;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BUDIMEX</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li><a href="zad14.html">Home</a></li>
+                <li><a href="sklep.html">Sklep</a></li>
+                <li><a href="jakdojechac.html">Jak dojechać</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <h1>Kontakt</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, corrupti!</p>
+            <form>
+                <label for="name">Imię: </label>
+                <input type="text"  id="name" style="width: 75%;">
+                
+                <label for="surname">Nazwisko: </label>
+                <input type="text"  id="surname" style="width: 75%;">
+                
+                <label for="msg">Treść: </label>
+                <textarea name="msg" id="msg" rows="2" style="width: 75%;"></textarea>
+                
+                <input  type="submit" value="Wyślij">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

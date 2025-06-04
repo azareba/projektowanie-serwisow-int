@@ -1,0 +1,10 @@
+Korzystając z przykładowego poniższego kodu,  przygotować  responsywną stronę internetową (RWD). Zachowaj układ jak na rysunku poniżej. Strona ma dotyczyć firmy BUDIMEX. Zmień kolorystykę bloków i czcionek.
+Po kliknięciu na menu sklep ma się pojawić strona z tym samym nagłówkiem, ale w contencie środkowym:
+1.	Po kliknięciu na sklep: niech będą 3 zdjęcia (responsywne) z produktami firmy Budimex, a pod spodem tekst z wyróżnionym pierwszym wierszem (pseudoelement).
+2.	Po kliknięciu na  „jak dojechać” ma pojawić się mapka dojazdowa (Google maps)
+3.	Po kliknięciu na kontakt formularz kontaktowy, pola: imię i nazwisko, treść, wyślij
+
+Dodaj do strony 2 kolejne break pointy(w których zmienisz wielkość wyświetlanej czcionki, poniżej 992px, oraz poniżej 600px).
+Jeżeli jakiegoś obiektu nie można wyskalować w nowych widokach, to je wyłącz.
+
+
